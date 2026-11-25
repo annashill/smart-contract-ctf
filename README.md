@@ -51,6 +51,19 @@ docker compose up --build
 
 > La clave privada de `compose.yaml` es una cuenta de prueba de Ganache. **Nunca uses claves reales** en este proyecto.
 
+### Conectar MetaMask
+
+Para jugar necesitas [MetaMask](https://metamask.io/) conectado a la red local de Ganache:
+
+| Campo | Valor |
+|---|---|
+| Nombre de la red | Ganache Local |
+| URL de RPC | `http://localhost:8545` |
+| Chain ID | `1337` |
+| Símbolo | ETH |
+
+Si reinicias el contenedor de Ganache, la blockchain empieza vacía. En ese caso, borra `contract-address.json` dentro del contenedor de la app (o recrea ambos con `docker compose down && docker compose up`) para que los contratos se vuelvan a desplegar.
+
 ## Ejecutar en local
 
 Requisitos: Python 3.9 o 3.10 y Ganache (CLI o GUI).

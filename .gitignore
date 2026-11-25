@@ -12,3 +12,14 @@ __pycache__/
 #Others
 contract-address.json
 contracts/attacks
+
+# Entornos locales y editores
+.venv/
+venv/
+.vscode/
+.idea/
+Thumbs.db
+
+# Documentos de la clase (no se publican)
+*.docx
+~$*
